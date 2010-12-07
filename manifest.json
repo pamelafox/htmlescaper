@@ -1,0 +1,18 @@
+{
+  "name": "HTML Escaper",
+  "description": "Lets you escape HTML when typing in textareas using the right-click menu.",
+  "version": "0.7",
+  "permissions": ["contextMenus", "tabs"],
+  "background_page": "background.html",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["page.js"]
+    }
+  ]
+}
